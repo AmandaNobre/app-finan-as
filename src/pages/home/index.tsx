@@ -1,9 +1,10 @@
 import Layout from "../../components/layout"
+import { LottieCustom } from "../../LottieCustom/LottieCustom"
 
 const Home = () => {
     return (
         <Layout title="Home">
-            <div>home</div>
+            <LottieCustom name="home" />
         </Layout>
     )
 }
