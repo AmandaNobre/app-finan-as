@@ -1,0 +1,13 @@
+.logo {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-color: var(--ion-color-primary);
+}
+
+.formLogin {
+    position: relative;
+    margin-top: -50px;
+    /* margin-left: 20px; */
+    background-color: var(--ion-color-primary-contrast);
+}

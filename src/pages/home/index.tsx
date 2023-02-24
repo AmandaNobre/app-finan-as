@@ -1,5 +1,5 @@
 import Layout from "../../components/layout"
-import { LottieCustom } from "../../LottieCustom/LottieCustom"
+import { LottieCustom } from "../../components/LottieCustom/LottieCustom"
 
 const Home = () => {
     return (
