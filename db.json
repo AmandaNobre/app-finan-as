@@ -1,7 +1,8 @@
 {
   "user": {
+    "id": 1,
     "name": "Amanda",
-    "monthlyIncome": "3000",
-    "leisure": "400"
+    "monthlyIncome": "0,001",
+    "leisure": "0,001"
   }
 }

@@ -1,6 +1,7 @@
 import { mailOutline, mailSharp } from 'ionicons/icons';
 
 import Home from './pages/home';
+import Login from './pages/login';
 import Settings from './pages/settings';
 
 
@@ -14,6 +15,13 @@ interface AppPage {
 
 
 const appPages: AppPage[] = [
+    {
+        title: 'Login',
+        url: '/page/login',
+        iosIcon: mailOutline,
+        mdIcon: mailSharp,
+        element: <Login />
+    },
     {
         title: 'Home',
         url: '/page/home',

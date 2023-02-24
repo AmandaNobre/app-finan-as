@@ -1,7 +1,5 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/react"
 
-import './index.css'
-
 interface IProps {
     title: string,
     children: React.ReactNode

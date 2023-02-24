@@ -22,7 +22,7 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'Configurações',
-    url: '/page/Inbox',
+    url: '/page/settings',
     iosIcon: settings,
     mdIcon: settings
   },
