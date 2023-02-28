@@ -8,7 +8,7 @@ import { useHistory } from "react-router";
 
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import './index.css'
-import { LottieCustom } from "../../components/LottieCustom/LottieCustom";
+
 const Login = () => {
 
     const [name, setName] = useState("")
@@ -21,8 +21,7 @@ const Login = () => {
             const { data } = await LoginServer.login(name)
             setUser(data)
             history.push("home")
-        } catch {
-        }
+        } catch {}
     }
 
     return (
@@ -38,7 +37,14 @@ const Login = () => {
                         value={name}
                         setValue={setName}
                     />
-                    <IonButton color={"primary"} expand="full" shape="round" onClick={clickLogin} >Entrar</IonButton>
+                    <IonButton
+                        color={"primary"}
+                        expand="full"
+                        shape="round"
+                        onClick={clickLogin}
+                    >
+                        Entrar
+                    </IonButton>
                 </div>
             </IonContent>
         </IonPage>

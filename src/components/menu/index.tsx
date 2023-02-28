@@ -9,7 +9,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { settings } from 'ionicons/icons';
+import { settings, heart} from 'ionicons/icons';
 import './index.css';
 
 interface AppPage {
@@ -20,6 +20,12 @@ interface AppPage {
 }
 
 const appPages: AppPage[] = [
+  {
+    title: 'Lista de desejos',
+    url: '/page/wishlist',
+    iosIcon: heart,
+    mdIcon: heart
+  },
   {
     title: 'Configurações',
     url: '/page/settings',

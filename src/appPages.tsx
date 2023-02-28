@@ -3,6 +3,7 @@ import { mailOutline, mailSharp } from 'ionicons/icons';
 import Home from './pages/home';
 import Login from './pages/login';
 import Settings from './pages/settings';
+import Wishlist from './pages/wishlist';
 
 
 interface AppPage {
@@ -35,6 +36,13 @@ const appPages: AppPage[] = [
         iosIcon: mailOutline,
         mdIcon: mailSharp,
         element: <Settings />
+    },
+    {
+        title: 'Lista de desejos',
+        url: '/page/wishlist',
+        iosIcon: mailOutline,
+        mdIcon: mailSharp,
+        element: <Wishlist />
     },
 ];
 

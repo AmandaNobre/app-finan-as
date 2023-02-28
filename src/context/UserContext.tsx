@@ -3,13 +3,12 @@ import ISettings from "../interfaces/ISettings";
 
 type UserContextType = {
     user: ISettings | undefined,
-    setUser:  React.Dispatch<React.SetStateAction<ISettings | undefined>>
+    setUser: React.Dispatch<React.SetStateAction<ISettings | undefined>>
 }
 
 interface Props {
     children: ReactNode
 }
-
 
 export const UserContext = createContext({} as UserContextType)
 
@@ -18,12 +17,10 @@ export const UserProvider = ({ children }: Props) => {
 
     const contextValues = React.useMemo(
         () => ({
-            user,
-            setUser
+            user, setUser
         }),
         [
-            user,
-            setUser
+            user, setUser
         ]
     )
 

@@ -2,15 +2,16 @@ import { IonButton, IonGrid, IonLabel, IonRow } from "@ionic/react"
 import Layout from "../../components/layout"
 import { wallet, airplane } from 'ionicons/icons';
 import InputCustom from "../../components/input";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import SettingsServer from "./settingsServer";
-
-
+import { UserContext } from "../../context/UserContext";
 
 const Settings = () => {
 
     const [monthlyIncome, setMonthlyIcome] = useState("0,00")
     const [leisure, setLeisure] = useState("0,00")
+
+    const { user } = useContext(UserContext)
 
     const saveSettings = async () => {
         try {
@@ -23,6 +24,13 @@ const Settings = () => {
             await SettingsServer.updateSettings(paylod)
         } catch { }
     }
+
+    useEffect(() => {
+        if (user) {
+            setMonthlyIcome(user.monthlyIncome)
+            setLeisure(user.leisure)
+        }
+    }, [user])
 
     return (
         <Layout title="Configurações">
