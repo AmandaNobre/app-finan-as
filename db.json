@@ -4,5 +4,42 @@
     "name": "Amanda",
     "monthlyIncome": "0,0012",
     "leisure": "0,001"
-  }
+  },
+  "wish": [
+    {
+      "id": 1,
+      "idUser": 1,
+      "name": "teste",
+      "price": "0,0012",
+      "marquer": false
+    },
+    {
+      "id": 2,
+      "idUser": 1,
+      "name": "teste 2",
+      "price": "0,123",
+      "marquer": false
+    },
+    {
+      "id": 3,
+      "idUser": 1,
+      "name": "teste 3",
+      "price": "0,123",
+      "marquer": false
+    },
+    {
+      "id": 4,
+      "idUser": 1,
+      "name": "teste 8",
+      "price": "0,123",
+      "marquer": false
+    },
+    {
+      "id": 5,
+      "idUser": 1,
+      "name": "teste 9",
+      "price": "0,123",
+      "marquer": false
+    }
+  ]
 }
